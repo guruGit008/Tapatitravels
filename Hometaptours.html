@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel and Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 2px solid #a73535;
+            color: black;
+        }
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+        header .logo img {
+            height: 150px; /* Increased logo height */
+            margin-right: 10px;
+        }
+        header .logo h1 {
+            color: rgb(136, 135, 32); /* Exact color as the logo */
+            margin: 0; /* Remove default margin */
+        }
+        header .nav-right {
+            text-align: right;
+        }
+        header .nav-right .email {
+
+            margin-bottom: 10px;
+        }
+        header .nav-right .menu a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px; /* Increased padding */
+    font-size: 24px; /* Increased font size */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+header .nav-right .menu a:hover {
+    background-color: #4CAF;
+    color: white;
+}
+header .nav-right .menu a.active {
+    background-color: #333;
+    color: white;
+}
+header .nav-right .menu {
+    display: flex;
+    gap: 10px; /* Increased gap */
+}
+        
+        main {
+            padding: 20px;
+            min-height: 80vh;
+        }
+        .hero-section {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero-section img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .hero-section .hero-text {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-60%, -50%);
+            color: whitesmoke;
+        }
+        .services-section, .about-section {
+            margin: 40px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .service {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .service:hover {
+            transform: translateY(-15px);
+        }
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .service h3 {
+            margin: 10px 0;
+            padding: 0 10px;
+        }
+        .service p {
+            padding: 0 10px 10px;
+        }
+        .about-section p {
+            max-width: 1000px;
+            margin: 0 auto;
+            text-align: center;
+            color: black;
+            font-family: Arial, sans-serif; /* Font family */
+            font-size: 18px; /* Font size */
+            line-height: 1.6; /* Line height for readability */
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        footer .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        footer .footer-content p {
+            margin: 0;
+        }
+        footer .footer-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer .footer-nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        footer .footer-nav ul li:last-child {
+            margin-right: 0;
+        }
+        footer .footer-nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        footer .footer-nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .footer-contact {
+            margin-top: 20px;
+            border-top: 1px solid #555;
+            padding-top: 20px;
+        }
+        .footer-contact p {
+            margin: 5px 0;
+        }
+        .email {
+            background-color: white;
+            padding: 5px 30px;
+            border-radius: 5px;
+            margin-bottom: 1opx;
+        }
+
+        .email p {
+            margin: 0;
+            font-size: 21px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Tapti corp.png" alt="Logo">
+            <h1>TAPTI CORP</h1>
+           
+        </div>
+        <div class="nav-right">
+            <div class="email">
+                <p>Reach us - <span style="color: red;">corptapti@gmail.com</span></p>
+            </div>
+            <div class="menu">
+                <a href="Hometaptours.html">Home</a>
+                <a href="ServicePage.html">Services</a>
+                <a href="Aboutus.html">About Us</a>
+                <a href="ContactUs.html">Contact</a>
+            </div>
+        </div>
+    </header>
+     
+    <main>
+        <section class="hero-section">
+            <img src="NATURAL.jpg" alt="Travel Image">
+            <div class="hero-text" style="position: absolute; top: -20%; left: 50%; transform: translate(-50%, -50%);">
+                <h2 style="font-size: 36px; font-weight: bold; color: #333;">Explore the World with Us</h2>
+                <p style="font-size: 20px;color: black;">Discover amazing places at exclusive deals.</p>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services">
+                <div class="service">
+                    <img src="tour-packages.jpg" alt="Service 1">
+                    <h3>Tour Packages</h3>
+                    <p>Explore our wide range of tour packages and choose your dream destination.</p>
+                </div>
+                <div class="service">
+                    <img src="Transportion (1).jpg" alt="Service 2">
+                    <h3>Transportation</h3>
+                    <p>Reliable transportation services to make your journey comfortable and hassle-free.</p>
+                </div>
+                <div class="service">
+                    <img src="Accomdation.jpg" alt="Service 3">
+                    <h3>Accommodation</h3>
+                    <p>Find the perfect accommodation options to suit your preferences and budget.</p>
+                </div>
+                <div class="service">
+                    <img src="Travel Planning and Booking.jpg" alt="Service 3">
+                    <h3>Travel Planning and Booking</h3>
+                    <p>Let us handle the planning and booking for your trip to ensure a stress-free experience.</p>
+            </div>
+        </section>
+
+        <section class="about-section">
+            <h2 class="section-title">About Us</h2>
+            <p>Welcome to TAPTI CORP, your ultimate destination for memorable travel experiences. We're committed to providing you with top-notch services that cater to your travel needs, whether it's planning a dream vacation, booking accommodations, or arranging transportation.
+                 we believe in the transformative power of travel. Our mission is to inspire and empower individuals to explore the world,and create lifelong memories.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 TAPTI CORP. All rights reserved.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    
+</body>
+</html>
